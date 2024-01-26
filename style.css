@@ -1,0 +1,180 @@
+@font-face {
+    font-family: ;
+    src: url("local/");
+}
+
+#header {
+    background-color: gainsboro;
+    box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.11);
+    height: 50px;
+}
+
+.main-title {
+    background: url(https://repositorio.generalwebsolutions.com.br/projetos/UDESC/projeto_grafico/trilha/assets/images/content/top-bg.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+#main-content {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+
+h1,
+h2 {
+    color: #164F25;
+    font-family: 'Barlow', sans-serif;
+    margin: 10px 0 30px;
+}
+
+.destaque {
+    background-color: #f1f1f1;
+    padding: 60px 30px;
+    color: #164F25;
+    border-radius: 70px 0 70px 0;
+    scroll-margin-block-end: 30px;
+}
+
+.border-destaque::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 4px;
+    background: #B3DEC8;
+    left: 0;
+    right: 10%;
+    bottom: -8px;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.border-destaque::before {
+    content: "";
+    display: block;
+    height: 4px;
+    left: 0;
+    background: #B3DEC8;
+    left: 10%;
+    top: -8px;
+    position: relative;
+    width: 90%;
+}
+
+.citacao {
+    color: #164F25;
+    font-style: italic;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.citacao::before {
+    content: url(assets/img/citacao.png);
+    max-width: 100%;
+    position:static;
+    display: flex;
+    margin-right: 20px;
+}
+
+.dica-icon {
+    background-color: #C1282A;
+    color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 30px;
+    border-radius: 300px 150px 150px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-height: 50px;
+    max-width: 320px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dica-icon::after {
+    content: "";
+    background: url(assets/img/dica.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+
+.dica-content {
+    color: #5E0000;
+    background-color: #fef5f5;
+    padding: 20px;
+    border-radius: 0 20px 20px 20px;
+}
+
+#carousel{
+    background-color: #E4E4E4;
+    border: 5px solid #f5f3f3;
+    padding: 30px;
+    border-radius: 30px;
+    height: 100%;
+    scroll-margin-block: 0;
+}
+
+.carousel-button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    bottom: -50px;
+}
+
+.carousel-control-prev{
+    position: static;
+    display: flex;
+    background: #164F25;
+    opacity: 1;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.carousel-control-next{
+    position: static;
+    display: flex;
+    background: #164F25;
+    opacity: 1;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-left: 5px;;
+}
+
+footer{
+    height: 40px;
+    background-color: #505050f2;
+    margin-top: 50px;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(-90%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+/* para tablets ou ecrã menores */
+@media screen and (max-width: 768px){
+    .citacao::before {display: none}
+    .dica-icon {display: none}
+}

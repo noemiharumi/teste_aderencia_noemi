@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha página de teste</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Noto+Sans&display=swap" rel="stylesheet">
+
+  <title>UDESC - Aberta</title>
+</head>
+
+<body>
+  <header>
+    <div class="main-title">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col">
+            <div class="head">
+              <h1>Mídias Digitais voltadas para uso em Sala de Aula</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- conteúdo principal -->
+  <div id="main-content">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-12">
+          <div class="conteudo">
+            <h1>A importância da responsabilidade no uso das mídias digitais em sala de aula</h1>
+            <p>Uma desvantagem é a falta de acessibilidade para alunos que não têm acesso a tecnologias ou que não
+              possuem
+              habilidades digitais desenvolvidas, o que pode gerar exclusão e desigualdades no processo de ensino.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda soluta dolorum expedita dolore?
+              Aperiam, asperiores explicabo voluptas sunt quas atque saepe officia fugit delectus vero assumenda,
+              exercitationem corrupti, tempore ea dignissimos. Non cum facilis vero laborum, animi saepe sit sunt!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illum voluptatem commodi quaerat ab
+              iure dicta illo nihil quibusdam, facilis id explicabo vel voluptate odit quo libero fugiat eum amet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-12 border-destaque">
+          <div class="destaque hidden">
+            <p>Outro ponto negativo é a dificuldade em garantir a segurança dos dados dos alunos, uma vez que muitas
+              plataformas digitais coletam e armazenam informações dos usuários.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-12">
+          <div class="conteudo hidden">
+            <h2>Redes sociais: interação x distração em sala de aula</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-12">
+          <div class="citacao hidden">
+            <p>Ensinar não é transferir conhecimento, mas criar as possibilidades para a sua própria produção ou a sua
+              construção.
+              <br>
+              <br>
+              <b>Paulo Freire</b>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5 hidden">
+        <div class="col-12">
+          <div class="dica">
+            <div class="dica-icon">
+              Dica
+            </div>
+            <div class="dica-content">
+              <p>Use aplicativos para controlar o tempo nas redes sociais e definir limites diários, mantendo um mais
+                consciente e saudável do uso dessas plataformas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--slideshow por carousel - bootstrap-->
+      <div class="row my-5 hidden">
+        <div class="col-12">
+          <!-- carousel com transição suave (fade) -->
+          <div id="carousel" class="carousel slide carousel-fade d-block">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>A importância da responsabilidade no uso das mídias digitais em sala de aula</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus est dolor hic dolores
+                  doloremque magni rem animi veniam, sed amet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet distinctio aspernatur accusamus in
+                  perferendis sequi ut itaque velit eveniet dolorum, sed similique eligendi tempore veritatis.
+                  Deleniti repudiandae ipsa debitis suscipit.</p>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/carousel1.png" class="d-block w-100 my-3" alt="...">
+                <p>A educação também pode ser uma ferramenta importante para a promoção da paz e da tolerância. Ela
+                  ensina valores como respeito mútuo, compreensão e valorização da diversidade, ajudando a construir
+                  uma sociedade mais justa.</p>
+              </div>
+              <div class="carousel-item">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea nam quasi, repellendus totam at
+                  dignissimos, dolor rerum quisquam atque ducimus error veniam ullam, soluta mollitia recusandae
+                  iure laboriosam nobis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum temporibus quasi
+                  voluptatibus optio laborum in, amet accusantium enim, repellat eius, eveniet fugiat quas eos
+                  quisquam eligendi. Dolore, explicabo illum.</p>
+              </div>
+            </div>
+            <!-- controle do carousel por botões -->
+            <div class="carousel-button">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <footer>
+
+  </footer>
+
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+    const myObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show')
+        } else {
+          entry.target.classList.remove('show')
+        }
+      })
+    })
+
+    const elements = document.querySelectorAll('.hidden')
+
+    elements.forEach((element) => myObserver.observe(element))
+
+    console.log(entries)
+
+    
+
+  </script>
+</body>
+
+</html>
